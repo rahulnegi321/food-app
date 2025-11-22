@@ -5,29 +5,29 @@ const foodPartnerSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    contactName:{
+    contactName: {
         type: String,
-        required:true
+        required: true
     },
-    phone:{
+    phone: {
         type: String,
-        required:true 
+        required: true
     },
-    address:{
+    address: {
         type: String,
-        required:true
-    }, 
+        required: true
+    },
     email: {
         type: String,
-        required:true,
-        unique:true
+        required: true,
+        unique: true
     },
-    password:{
-        type:String,
-        required:true
+    password: {
+        type: String,
+        required: true
     }
 })
 
-const foodPartnerModel = mongoose.model("foodpartner",foodPartnerSchema);
+const foodPartnerModel = mongoose.model("foodpartner", foodPartnerSchema);
 
 module.exports = foodPartnerModel;
